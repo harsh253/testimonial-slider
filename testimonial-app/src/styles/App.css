@@ -1,0 +1,152 @@
+/* html,body, #root, .App{
+  height: 100%;
+} */
+
+
+body{
+  background-image: url('../images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;  
+  background-attachment: fixed;
+}
+/* 
+.main-container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.main-container > div{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap-reverse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.description-container{
+  background-image: url('../images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position-x: 86px;
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  left: 100px;
+  z-index: 99;
+}
+
+.description{
+  padding-top: 37px;  
+}
+
+.long-description > p{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 32px;
+  color: rgb(32 32 70);
+}
+
+.profile-info-container{
+  display: flex;
+}
+
+.profile-info-container > .name > h5 {
+  color: rgb(32 32 70);
+  font-weight: 700;
+}
+
+.profile-info-container > .profile-info > h5{
+  font-family: 'Inter';
+  margin-top: 0px; 
+}
+
+.profile-info-container > .profile{
+  margin-left: 5px;
+  color: rgb(186 186 207);
+}
+
+.photo-container{
+  position: relative;
+  right: 60px;
+}
+
+
+.photo-container > .photo-bg >.profile-photo{
+  position: absolute;
+  top: 64px;
+  left: 70px;
+}
+
+.photo-container > .photo-bg >.profile-photo > img{
+  box-shadow: 1px 20px 30px 0px rgb(186 186 207);
+  border-radius: 5px;
+}
+
+.profile-photo > .navigator{
+  position: absolute;
+  bottom: -10px;
+  left: 70px;
+}
+
+.profile-photo > .navigator > button{
+  background-color: white;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 10px 0px rgb(186 186 207);
+  outline: none;
+}
+
+.profile-photo > .navigator > button:active{
+  background-color: transparent;
+}
+
+
+
+
+#left{
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+#right{
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1400px){
+  .photo-container{
+    position: relative;
+    right: 0px;
+    margin: 10px;
+  }
+
+  .description-container{
+    left: 0px;
+    background-position-x: 250px;
+  }
+
+  .description{
+    text-align: center;
+  }
+
+  .profile-info-container{
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+
+  .profile-info > h5{
+    margin-bottom: 0px;
+  } 
+
+  .main-container{
+    width: fit-content
+  }
+}
