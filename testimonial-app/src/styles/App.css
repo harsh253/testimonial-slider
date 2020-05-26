@@ -130,10 +130,15 @@ body{
   .description-container{
     left: 0px;
     background-position-x: 250px;
+    background-position-y: 10px ;
   }
 
   .description{
     text-align: center;
+  }
+
+  .profile-photo > .navigator{
+    left: 220px;
   }
 
   .profile-info-container{
