@@ -1,20 +1,19 @@
-/* html,body, #root, .App{
+html,body, #root, .App{
   height: 100%;
-} */
+}
 
+.App{
+  display: flex;
+  justify-content: center;
+}
 
 body{
   background-image: url('../images/pattern-curve.svg');
   background-repeat: no-repeat;
   background-position-y: bottom;  
   background-attachment: fixed;
+
 }
-/* 
-.main-container{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 .main-container > div{
   display: flex;
@@ -73,22 +72,21 @@ body{
   right: 60px;
 }
 
-
-.photo-container > .photo-bg >.profile-photo{
+.photo-container > .photo-bg > .profile-photo{
   position: absolute;
-  top: 64px;
-  left: 70px;
+  top: 10%;
+  left: 13%;
 }
 
-.photo-container > .photo-bg >.profile-photo > img{
+.photo-container > .photo-bg > .profile-photo > img{
   box-shadow: 1px 20px 30px 0px rgb(186 186 207);
   border-radius: 5px;
 }
 
 .profile-photo > .navigator{
   position: absolute;
-  bottom: -10px;
-  left: 70px;
+  bottom: -3%;
+  left: 9%;
 }
 
 .profile-photo > .navigator > button{
@@ -116,39 +114,102 @@ body{
   border-bottom-right-radius: 100px;
 }
 
-
-@media screen and (min-width: 375px) and (max-width: 1400px){
+@media screen and (min-width:768px){
   .photo-container{
-    position: relative;
-    right: 0px;
-    margin: 10px;
+    max-width: 50%;
   }
+}
 
-  .description-container{
-    left: 0px;
-    background-position-x: 250px;
-    background-position-y: 10px ;
+@media screen and (min-width: 320px) and (max-width: 768px){
+  body{
+    background-size: 100%;
   }
+}
 
-  .description{
-    text-align: center;
-  }
-
-  .profile-photo > .navigator{
-    left: 220px;
-  }
-
-  .profile-info-container{
-    width: 50%;
+@media screen and (min-width: 320px) and (max-width: 1400px){
+  .main-container{
+    width: 70%;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .App{
     display: block;
   }
 
-  .profile-info > h5{
-    margin-bottom: 0px;
-  } 
 
-  .main-container{
-    width: fit-content
+  .description-container{
+    left: 0px;
+    background-position-x: center;
+    margin-top: 20px;
+    background-size: 15%;
+  }
+
+  .description{
+    padding-top: 0px;
+  }
+
+  .long-description > p{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .photo-bg > .bg{
+    width: 100%;
+  }
+
+  .photo-bg > .bg > img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photo-container > .photo-bg > .profile-photo > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photo-container > .photo-bg >.profile-photo{
+    max-width: 76%;
+    margin:auto
+  }
+
+  .photo-container{
+    right: 0px;
+  }
+
+  .profile-photo > .navigator{
+    /* position: relative; */
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 25%;
+  }
+
+  .profile-photo > .navigator > button{
+    padding: 12%;
+  }
+
+  .profile-photo > .navigator > button > img{
+    max-width: 60%;
+    height: auto;
+  }
+
+
+
+  .profile-info-container{
+    display: block;
+  }
+
+  .profile-info{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .profile-info > h5{
+    margin-bottom: 2px;
+    font-size: 20px;
   }
 }

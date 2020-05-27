@@ -33,15 +33,15 @@ class ProfilePhoto extends Component{
                     <img src={bg} alt="asd"></img>
                 </div>
                 <div className="profile-photo">
-                    <img src={this.state.imgSrc} alt="asd"></img>
-                    <div className="navigator">
-                    <button id="left" onClick={this.slideLeft}>
-                        <img src={btnLeft} alt="prev"></img>
-                    </button>
-                    <button id="right" onClick={this.slideRight}>
-                        <img src={btnRight} alt="next"></img>
-                    </button>
-                </div>
+                        <img src={this.state.imgSrc} alt="asd"></img>
+                        <div className="navigator">
+                            <button id="left" onClick={this.slideLeft}>
+                                <img src={btnLeft} alt="prev"></img>
+                            </button>
+                            <button id="right" onClick={this.slideRight}>
+                                <img src={btnRight} alt="next"></img>
+                            </button>
+                        </div>
                 </div>
             </div>
         )
